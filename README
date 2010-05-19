@@ -1,0 +1,23 @@
+= Overview
+
+Code generators and complete layout template for template_derby
+
+= Installation
+
+
+Install plugins: template_derby, jrails, template_derby_generators
+
+
+= Usage
+
+Generate models:
+
+ ruby script/generate dm2_model Event
+
+Generate controllers:
+
+ ruby script/generate dm2_controller Event
+
+
+Copyright Note - You are not allowed to use enclosed design in commercial/public projects.
+

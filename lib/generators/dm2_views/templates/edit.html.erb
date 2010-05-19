@@ -1,0 +1,8 @@
+<column-mc:>
+   <h1>Edit <%= object_singular_name  %> #<%%= @<%= object_singular_name %>.id  %></h1>
+    <%% semantic_form_for <%= class_path.blank? ? "@#{object_singular_name}" : "[#{class_path.map{|a| ":#{a}"}*(', ')}, @#{object_singular_name}]" %> do |form| %>
+    <%%= form.inputs %>
+    <%%= form.buttons %>
+    <%% end %>
+    <%%= link_to 'Back', <%= namespace_prefix %><%= object_plural_name %>_path %>
+</column-mc:>

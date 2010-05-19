@@ -1,0 +1,119 @@
+/*
+ * SimpleModal OSX Style Modal Dialog
+ * http://www.ericmmartin.com/projects/simplemodal/
+ * http://code.google.com/p/simplemodal/
+ *
+ * Copyright (c) 2009 Eric Martin - http://ericmmartin.com
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *
+ * Revision: $Id: osx.css 214 2009-09-17 04:53:03Z emartin24 $
+ *
+ */
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#osx-modal-content, #osx-modal-data {
+    display: none;
+}
+
+/* Overlay */
+#osx-overlay {
+    background-color: #000;
+}
+
+/* Container */
+#osx-container {
+    background-color: #f2f2f2;
+    color: #000;
+    padding-bottom: 4px;
+    width: 650px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-box-shadow: 0 0 64px #000;
+    -webkit-box-shadow: 0 0 64px #000;
+    overflow: hidden;
+}
+
+#osx-container a {
+    color: #000;
+    text-decoration: none
+}
+
+#osx-container #osx-modal-title {
+    color: #000;
+    font-weight: bold;
+    padding: 15px 13px;
+    text-shadow: 1px 1px 0px #fff;
+    font-size: 22px;
+
+}
+
+#osx-container .close {
+    display: none;
+    float: right;
+}
+
+#osx-container .close a {
+    display: block;
+    color: #777;
+    font-size: .8em;
+    font-weight: bold;
+    padding: 6px 12px 0;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #f4f4f4;
+}
+
+#osx-container .close a:hover {
+    color: #000;
+}
+
+#osx-container #osx-modal-data {
+    padding: 6px 15px;
+}
+
+#osx-container h2 {
+    margin: 10px 0 6px;
+}
+
+#osx-container p {
+    margin-bottom: 10px;
+}
+
+#osx-container span {
+    color: #777;
+    font-size: .9em;
+}
+
+#osx-container .bt_close
+{
+    top: 10px;
+    right: 14px;
+    z-index: 20;
+}
+
+
+/* Treeview */
+#osx-container #projects_main_tree {
+    overflow-y: auto;
+    margin-left: 50px;
+    height: 350px;
+}
+
+#osx-container .buttons
+{
+    background: none;
+    margin: 0px;
+}
+
+#osx-container .buttons ol li.commit
+{
+    margin: 0px;
+    padding: 15px 0px 10px 0;
+}
+
+

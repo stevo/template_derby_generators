@@ -1,0 +1,1158 @@
+body
+{
+    background: url(/images/bg_body.gif) repeat-x top left #f2f2f2;
+    font: 13px 'Trebuchet MS', Helvetica, Tahoma, Verdana;
+    overflow-y: scroll;
+}
+
+.all
+{
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.r_m .cm_full
+{
+    padding-top: 15px;
+}
+
+h1
+{
+    font-size: 36px;
+    text-shadow: 1px 1px 0px #fff;
+    float: left;
+    height: 50px;
+    margin-bottom: -26px;
+    padding-left: 40px;
+    position: relative;
+    z-index: 5;
+}
+
+.frame h1
+{
+    float: none;
+    height: auto;
+    margin-bottom: -26px;
+}
+
+#logo
+{
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+
+#footer
+{
+    color: #777;
+    text-shadow: 1px 1px #fff;
+    text-align: center;
+    background: url(/images/bg_footer.png) no-repeat top center;
+    clear: both;
+    padding-top: 12px;
+}
+
+#footer a
+{
+    text-decoration: none;
+    color: #777;
+    border-bottom: 1px solid #ddd;
+}
+#footer a:hover
+{
+    color: #1DA3F0;
+    border-bottom-color: #b9e2fa;
+}
+
+
+#footer img
+{
+    position: relative;
+    top: 3px;
+}
+
+/* ------- main-menu -------- */
+
+.main_menu
+{
+    padding: 37px 24px 0px;
+    height: 50px;
+}
+
+.main_menu li
+{
+    display: block;
+    float: right;
+    width: 132px;
+    height: 38px;    
+    margin-left: -8px;
+}
+
+.main_menu li a
+{
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #6b6b6b;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+    background: url(/images/tabs_bg.png) no-repeat top left;
+    width: 132px;
+    height: 38px;
+    display: block;
+    line-height: 37px;
+    z-index:5;
+    position: absolute;
+}
+
+.main_menu li a:hover
+{
+    color: #535252;
+}
+
+.main_menu li.highlighted a
+{
+    background: url(/images/tabs_bg_hover.png) no-repeat top left;
+    width: 185px;
+    height: 51px;
+    font-size: 16px;
+    color: #838282;
+    line-height: 41px;
+    margin-top: -8px;
+    margin-left: -27px;
+    z-index: 10;
+}
+
+.main_menu li.main_menu_actions
+{
+    width: 100px;
+    background: url(/images/tabs_actions.png) no-repeat top left;
+    padding: 2px 0px 0px;
+    float: right;
+    margin-left: 15px;
+}
+.main_menu li.main_menu_actions a
+{
+    position: relative;
+    width: 34px;
+    height: 35px;    
+    display: block;
+    font-size: 0;
+    text-indent: -9999px;
+}
+
+#logout_link
+{
+    background: url(/images/tabs_logout.png) no-repeat top center;
+    float: right;
+    right: 21px;
+}
+
+#my_account_link
+{
+    background: url(/images/tabs_myaccount.png) no-repeat top center;
+    float: left;
+    left: 17px;
+}
+
+#logout_link:hover, #my_account_link:hover
+{
+    background-position: bottom center;
+}
+
+
+/* ------- submenu -------- */
+
+#submenu
+{
+    height: 53px;
+    width: 100%;
+    background: url(/images/bg_submenu.png) no-repeat top left #f2f2f2;
+    padding: 0px 20px;
+}
+
+#submenu ul li
+{
+    display: block;
+    float: left;
+    padding: 2px 5px;
+}
+
+#submenu ul li a
+{
+    display: block;
+    padding: 6px 13px;
+    background: #e4e4e4;
+    -moz-border-radius: 20px;
+    -moz-box-shadow: 0px 1px #fff, 0px -1px #a7a7a7;
+
+    -webkit-border-radius: 20px;
+    -webkit-box-shadow: 0px 1px #fff, 0px -1px #a7a7a7;    
+
+    font-size: 13px;
+    text-decoration: none;
+    color: #626060;
+}
+
+#submenu ul li a:hover
+{
+    background: #dcdcdc;
+    color: #454545
+}
+
+#submenu ul li.highlighted a
+{
+    background: #202020; /*url(/images/frm_hm.png) repeat-x bottom left; */
+    color: #fff;
+    -moz-box-shadow: 0px -1px #fff, 0px 1px #fff;
+    -webkit-box-shadow: 0px -1px #fff, 0px 1px #fff;     
+}
+
+
+
+/* ------- frame -------- */
+
+.frame
+{
+    clear: both;
+    top: -5px;
+}
+
+.frame .header
+{
+    height: 50px;
+    background: url(/images/frm_hmc.gif) repeat-x top left;    
+}
+.frame .header .lc, .frame .header .rc
+{
+    position: absolute;
+    width: 45px;
+    height: 50px;
+    top: 0px;
+}
+
+.frame .header .lc
+{
+    background: url(/images/frm_hlc.gif) no-repeat top left;
+    left: 0px;
+}
+
+.frame .header .rc
+{
+    background: url(/images/frm_hrc.gif) no-repeat top left;
+    right: 0px;
+}
+
+.frame .content
+{
+    background: url(/images/frm_cl.gif) repeat-y top left #fff;
+}
+.frame .content .c
+{
+    background: url(/images/frm_cr.gif) repeat-y top right;
+    padding: 0px 26px 0px;
+}
+
+.frame .footer
+{
+    clear: both;
+    height: 40px;
+    background: url(/images/frm_fm.gif) repeat-x bottom center;
+}
+
+.frame .footer .lc, .frame .footer .rc
+{
+    position: absolute;
+    width: 45px;
+    height: 40px;
+    top: 0px; 
+}
+
+.frame .footer .lc
+{
+    left: 0px;
+    background: url(/images/frm_fl.gif) no-repeat bottom left;
+}
+
+.frame .footer .rc
+{
+    right: 0px;
+    background: url(/images/frm_fr.gif) no-repeat bottom left;       
+}
+
+
+.frame .content .c fieldset.inputs
+{
+    padding: 0px 20px;
+}
+
+/* ------- end frame -------- */
+
+/* ------- flash msg -------- */
+
+.emboss_frame
+{
+    clear: both;
+    top: -5px;
+    padding: 0px 25px 0px;
+}
+
+.emboss_frame .header
+{
+    height: 15px;
+    background: url(/images/emboss_frame/frm_hmc.gif) repeat-x top left;
+    margin-top: 10px;
+}
+.emboss_frame .header .lc, .emboss_frame .header .rc
+{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0px;
+}
+
+.emboss_frame .header .lc
+{
+    background: url(/images/emboss_frame/frm_hlc.gif) no-repeat top right;
+    left: 0px;
+}
+
+.emboss_frame .header .rc
+{
+    background: url(/images/emboss_frame/frm_hrc.gif) no-repeat top left;
+    right: 0px;
+}
+
+.emboss_frame .content
+{
+    background: url(/images/emboss_frame/frm_cl.gif) repeat-y top left #e6e6e6;
+}
+.emboss_frame .content .c
+{
+    background: url(/images/emboss_frame/frm_cr.gif) repeat-y top right;
+    padding: 0px 16px;
+}
+
+.emboss_frame .footer
+{
+    clear: both;
+    height: 15px;
+    background: url(/images/emboss_frame/frm_fm.gif) repeat-x bottom center;
+}
+
+.emboss_frame .footer .lc, .emboss_frame .footer .rc
+{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0px;
+}
+
+.emboss_frame .footer .lc
+{
+    left: 0px;
+    background: url(/images/emboss_frame/frm_fl.gif) no-repeat bottom right;
+}
+
+.emboss_frame .footer .rc
+{
+    right: 0px;
+    background: url(/images/emboss_frame/frm_fr.gif) no-repeat bottom left;
+}
+
+
+.emboss_frame .content .c fieldset.inputs
+{
+    padding: 0px 20px 20px;
+}
+
+.emboss_frame .content .c .bt_close
+{
+    position: absolute;
+    top: -3px;
+    right: 13px;
+}
+
+.emboss_frame .content .c #message_block
+{
+    padding: 1px 0px;
+}
+
+/* ------- end frame -------- */
+
+/* ------- actions menu -------- */
+
+ul.actions 
+{
+    float: right;
+    padding-right: 30px;
+    height: 50px;
+    position: relative;
+    z-index: 5;
+    margin-bottom: -26px;    
+}
+
+ul.actions li
+{
+    display: block;
+    float: right;
+    padding-left: 5px;
+}
+ul.actions li a
+{
+    width:39px;
+    height: 50px;
+    display: block;
+    font-size: 0;
+    color: #f2f2f2;
+}
+
+ul.actions li a.add
+{
+    background: url(/images/actions_add.png) no-repeat top left;
+}
+
+ul.actions li a.settings
+{
+    background: url(/images/actions_settings.png) no-repeat top left;
+}
+
+
+/* ------ table frm ------- */
+
+
+.generic
+{
+    width: 100%;
+    clear: both;
+}
+
+.generic thead .lc, .frgenericm thead .rc
+{
+    width: 45px;
+    height: 66px;
+}
+
+.generic thead th
+{
+    color: #fff;
+    font-size: 14px;
+    padding: 20px 4px 0px;
+    text-align: left;
+    background: url(/images/frm_hm.png) repeat-x bottom center;    
+}
+
+.generic tbody tr.spacer td
+{
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 10px;
+    text-align: left;
+    background: url(/images/frm_hm.png) repeat-x center bottom;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.generic tbody tr.spacer .lb
+{
+    background: url(/images/frm_cl_spacer.png) no-repeat top right;
+}
+
+.generic tbody tr.spacer .rb
+{
+    background: url(/images/frm_cr_spacer.png) no-repeat top left;
+}
+
+.generic thead .lc
+{
+    background: url(/images/frm_hl.png) no-repeat top left;
+    padding: 0px;
+}
+
+.generic thead .rc
+{
+    background: url(/images/frm_hr.png) no-repeat top left;
+    border:none;
+    padding: 0px;    
+}
+
+.generic thead a
+{
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px dotted #757575;
+}
+
+.generic tbody td
+{
+    background: url(/images/frm_dot.gif) repeat-x bottom center;
+}
+
+
+.generic tbody .lb
+{
+    background: url(/images/frm_cl.png) repeat-y top left;
+    border: none;
+}
+
+.generic tbody .odd .lb
+{
+    background: url(/images/frm_cl_odd.png) repeat-y bottom left;
+}
+
+.generic tbody .even .lb
+{
+    background: url(/images/frm_cl_even.png) repeat-y bottom left;
+}
+
+.generic tbody .rb
+{
+    background: url(/images/frm_cr.png) repeat-y top right;
+    border: none;
+    padding: 2px 9px;
+    vertical-align: top;
+}
+
+.generic tbody .odd .rb
+{
+    background: url(/images/frm_cr_odd.png) repeat-y bottom left;
+}
+
+.generic tbody .even .rb
+{
+    background: url(/images/frm_cr_even.png) repeat-y bottom left;
+}
+
+.generic tbody td
+{
+    background-color: #fff;
+    padding: 9px 4px;
+    font-size: 12px;
+}
+
+.generic tfoot td
+{
+    height: 50px;
+    background: url(/images/frm_fm.png) repeat-x top center;
+}
+
+.generic tfoot .lc, .generic tfoot .rc
+{
+    width: 45px;
+}
+
+.generic tfoot .lc
+{
+    background: url(/images/frm_fl.png) no-repeat top left;
+}
+
+.generic tfoot .rc
+{
+    right: 0px;
+    background: url(/images/frm_fr.png) no-repeat top left;
+}
+
+.generic tbody .rb div
+{
+    height: 31px;
+    background: url(/images/frm_actions.png) no-repeat top left;
+    position: absolute;
+    display: none;
+    padding: 7px 8px 0px 20px;
+    white-space:nowrap;
+}
+.generic tbody .rb div a
+{
+   z-index: 10;
+   position: relative;
+}
+.generic tbody .rb div span
+{
+    height: 31px;
+    width: 15px;
+    position: absolute;
+    background: url(/images/frm_actions.png) no-repeat top right #f2f2f2;
+    right: 0;
+    top: 0;
+    z-index: 5;
+}
+
+
+.generic tbody tr.total td.lb
+{
+    background: url("/images/frm_cl.png") repeat-y scroll left top transparent;    
+}
+.generic tbody tr.total td.rb
+{
+    background: url("/images/frm_cr.png") repeat-y scroll left top transparent;
+}
+
+
+.generic tbody tr.total td
+{
+    font-weight: bold;
+    background: #fff;
+    padding-bottom: 0px;
+}
+.generic tbody tr.total td span
+{
+    text-align: center;
+    margin: 0px auto;
+    background: url(/images/total.png) no-repeat top center;
+    padding-top: 5px;
+    display: inline-block;
+}
+
+.generic tbody tr.total td span b
+{
+    display: inline-block;
+    background: url(/images/total.png) repeat-x 0px -5px;
+    color: #fff;
+    padding: 4px 6px 3px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.vertical_header thead th
+{
+    background: url(/images/frm_hm_long.png) repeat-x top left;
+}
+.vertical_header thead .lc
+{
+    background: url(/images/frm_hl_long.png) no-repeat scroll left top;
+}
+.vertical_header thead .rc
+{
+    background: url(/images/frm_hr_long.png) no-repeat scroll left top;
+}
+.vertical_header tbody td
+{
+    text-align: center;
+}
+
+.generic thead th.vertical
+{
+    background: url(/images/frm_hm_long.png) repeat-x top left;
+    height: 150px;
+}
+
+.generic thead th.vertical span
+{
+    display: block;
+    writing-mode: tb-rl;
+    filter: flipv fliph;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);    
+    text-align: left;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+.generic thead th.vertical span{position: relative;top: -10px;}
+}
+
+/* ------ forms ------- */
+
+.inputs
+{
+    /*margin-bottom: 20px;*/
+    position: relative;
+}
+
+.separated
+{
+    background: url(/images/dash.gif) repeat-x 0px 40px #f5f5f5;
+    margin: 0px 20px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 20px !important;
+}
+
+.separated legend
+{
+    position: relative;
+}
+
+.separated legend span
+{
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 450px;
+
+}
+
+.separated ol
+{
+    padding: 50px 0px 8px;
+}
+
+
+.inputs ol
+{
+    position: relative;
+}
+
+.inputs ol li
+{
+    display: block;
+    padding-bottom: 5px;
+    clear: both;
+}
+.inputs ol li label
+{
+    font-size: 13px;
+    display: block;
+    float: left;
+    width: 160px;
+    padding-top:6px;
+}
+
+.inputs ol li input, .inputs ol li textarea
+{
+    width: 280px;
+}
+.inputs ol li textarea
+{
+    height: 150px;
+}
+
+.inputs ol li.boolean
+{
+    height: 35px;
+}
+
+.inputs ol li.boolean input
+{
+    width: auto;
+    position: absolute;
+    margin-left: 162px;
+    margin-top: 2px;
+    outline: 0;
+}
+
+.inputs ol li.with_bt
+{
+    display: inline;
+}
+
+.inputs ol li.input_bt
+{
+    display: inline;
+}
+.inputs ol li.input_bt a, .inputs ol li .ui-datepicker-trigger
+{
+    position: absolute;
+    margin: 4px 0px 0px -26px;
+    cursor: pointer;
+}
+
+.inputs ol li span
+{
+    padding-top:6px;
+    float: left;
+}
+
+p.inline-hints
+{
+    font-style: italic;
+    padding-left: 162px;
+    color: #888;
+}
+
+.inputs ol li p.inline-errors
+{
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: url(/images/inline_errors.png) repeat-x scroll left bottom;
+    color:#FFFFFF;
+    display:block;
+    float: left;
+    clear: both;
+    left: 160px;
+    font-size:13px;
+    height:30px;
+    line-height:30px;
+    margin:15px 0px 10px;
+    padding:0 8px;
+    position:relative;
+}
+
+.invoice_line ol li p.inline-errors
+{
+    left: 0;
+    margin-top: 9px;
+}
+
+.inputs ol li p.inline-errors span
+{
+    background:url("/images/inline_errors.png") no-repeat scroll left top transparent;
+    height:7px;
+    left:10px;
+    padding:0;
+    position:absolute;
+    top:-7px;
+    width:10px;
+}
+
+.inputs ol li.error input
+{
+    border-color: #ffb0b0;
+    border-top-color: #f45252;
+    background: #fff2f2;
+}
+
+
+.wl ol li label
+{
+    width: 200px;
+}
+
+.inputs ol li .bt_revert
+{
+    position: absolute;
+    margin: 7px 0 0 5px;
+}
+
+
+
+/* ----------- form buttons -------------- */
+
+ol li.commit, ol li.filter
+{
+    text-align: right;
+    padding: 15px 15px 15px 0px;
+    margin-bottom: -10px;
+    float: right;
+}
+ol li.commit input
+{
+    border: 0;
+    font-size: 0;
+    padding: 0px;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    color: #fff;
+    -moz-border-radius: 18px;
+    -webkit-border-radius: 18px;
+    position: relative;
+    z-index: 10;
+    text-indent: -9999px;
+    outline: 0;
+}
+
+ol li.commit input:hover, ol li.filter a:hover, .bt_highlighted
+{
+    -moz-box-shadow: 0px 0px 10px #00c6ff,0px 0px 25px #e9faff;
+    -webkit-box-shadow: 0px 0px 10px #00c6ff;
+    box-shadow: 0px 0px 10px #00c6ff;
+}
+
+ol li.commit input:focus, ol li.filter a:focus
+{
+    -moz-box-shadow: 0px 0px 15px #00c6ff,0px 0px 25px #e9faff;
+    -webkit-box-shadow: 0px 0px 15px #00c6ff;
+    box-shadow: 0px 0px 15px #00c6ff;
+}
+
+ol li.commit .create
+{
+    background: url(/images/btns/create.png) no-repeat center center;
+}
+ /*
+@-webkit-keyframes pulse {
+from {  -webkit-box-shadow: 0px 0px 15px #fff; }
+50% {  -webkit-box-shadow: 0px 0px 15px #00e4ff; }
+to { -webkit-box-shadow: 0px 0px 15px #fff; }
+}
+
+ol li.commit .create:hover
+{
+    -webkit-animation-name: pulse;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+        */
+
+
+ol li.commit .update
+{
+    background: url(/images/btns/save.png) no-repeat center center;
+}
+
+ol li.filter a
+{
+    display: block;
+    width: 110px;
+    height: 35px;
+    background: url(/images/btns/clear_filter.png) no-repeat center center;
+    font-size: 0;
+    text-indent: -9999px;
+    -moz-border-radius: 18px;
+    -webkit-border-radius: 18px;
+    z-index: 20;
+    text-align:center;
+    color: #2a2a2a;
+    text-decoration: none;
+
+}
+
+.send ol li.commit .create
+{
+    background: url(/images/btns/send.png) no-repeat center center;
+}
+
+/* ----------- fieldsets -------------- */
+
+fieldset.buttons
+{
+    background: url(/images/dash.gif) repeat-x top left;
+    margin-top: 8px;
+    position: relative;
+}
+
+
+input, textarea, select
+{
+    /*
+    -moz-border-radius: 3px;
+    border: 1px solid #d1d0d0;
+    padding: 5px 6px;
+    background: url(/images/inputs/field.png) no-repeat top left #fbfbfb;
+    */
+
+    border: 1px solid #dce0e3;
+    border-top-color: #aaaeb2;
+    padding: 5px 6px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+input:focus, textarea:focus
+{
+    border-color: #bdd5ee;
+    border-top-color: #3f78b2;
+}
+
+select
+{
+    padding: 3px 2px 3px 2px;
+}
+
+
+.bt_close
+{
+    position: absolute;
+    top: -13px;
+    right: 38px;
+}
+
+/* --------- statuses -------- */
+
+#new, #filter
+{
+    display: none;
+}
+
+
+
+a, input
+{
+    outline: 0;
+}
+
+a
+{
+    color: #0F7DFF;
+}
+
+
+/* --------- pagination ------------- */
+
+/* ---- pagination ---- */
+
+.pagination
+{
+    text-align: center;
+    padding: 5px 0px 25px;
+}
+.pagination a, .pagination span
+{
+
+    display:inline-block;  
+    padding: 4px 10px;
+    background: #e4e4e4;
+    -moz-border-radius: 20px;
+    -moz-box-shadow: 0px 1px #fff, 0px -1px #a7a7a7;
+
+    -webkit-border-radius: 20px;
+    -webkit-box-shadow: 0px 1px #fff, 0px -1px #a7a7a7;
+
+    font-size: 12px;
+    text-decoration: none;
+    color: #626060;
+
+}
+.pagination a:hover, .pagination span:hover
+{
+    background: #dcdcdc;
+    color: #454545
+}
+.pagination .current, .pagination .current:hover
+{
+    background: #202020; /*url(/images/frm_hm.png) repeat-x bottom left; */
+    color: #fff;
+    -moz-box-shadow: 0px -1px #fff, 0px 1px #fff;
+    -webkit-box-shadow: 0px -1px #fff, 0px 1px #fff;  
+}
+
+.pagination .disabled, .pagination .disabled:hover
+{
+    color: #aaa9a9;
+    background: #ebebeb;
+    -moz-box-shadow: 0px -1px #cdcdcd, 0px 1px #f9f9f9;
+    -webkit-box-shadow: 0px -1px #cdcdcd, 0px 1px #f9f9f9;
+}
+
+/* --------- reports table colours -------- */
+
+/* numbers */
+
+span.zero
+{
+color: #777;
+}
+
+span.neg
+{
+color: red;
+font-weight:bold;
+}
+
+span.pos
+{
+font-weight:bold;
+}
+
+tr.odd td
+{
+background-color:#F5F5F5;
+}
+
+.ta_l, .generic tbody tr td.ta_l
+{
+    text-align: left;
+}
+
+
+.clb
+{
+    clear: both;
+    overflow:hidden;
+}
+
+.inputs ol li.hidden
+{
+    display: none;
+}
+
+#message_block ul
+{
+    font-weight: bold;
+    margin: 10px 25px 5px;
+    padding: 15px 20px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radi: 15px;
+}
+
+#message_block ul.error
+{
+    background-color: #e12f19;
+    background-image: -moz-linear-gradient(100% 100% 90deg, #ce230f, #e12f19);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(#e12f19), to(#ce230f));
+    color: #fff;
+    text-shadow: -1px -1px #6c1200;
+}
+
+#message_block ul.notice
+{
+    background-color: #95e715;
+    color: #fff;
+    background-image: -moz-linear-gradient(100% 100% 90deg, #89d41d, #95e715);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(#95e715), to(#89d41d));
+    text-shadow: -1px -1px #5f970f;
+}
+
+#message_block ul li
+{
+    line-height: 18px;
+}
+
+/* ------------- ribbons ------------ */
+
+
+.ribbon
+{
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    display: block;
+
+    padding: 0px 35px 0px 30px;
+    text-align: center;
+    min-width: 100px;
+    z-index: 20;
+}
+
+.ribbon h3
+{
+    font-size: 22px;
+    color: #fff;
+    line-height: 46px;
+}
+
+.ribbon .ribbon_end
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 50px;
+}
+
+
+.r_colour_red
+{
+    background: url(/images/ribbons/ribbon_red.png) no-repeat top left;
+    text-shadow: -1px -1px #921900;
+}
+.r_colour_red .ribbon_end
+{
+    background: url(/images/ribbons/ribbon_red.png) no-repeat top right #fff;
+}
+
+.r_colour_blue
+{
+    background: url(/images/ribbons/ribbon_blue.png) no-repeat top left;
+    text-shadow: -1px -1px #1275a9;
+}
+.r_colour_blue .ribbon_end
+{
+    background: url(/images/ribbons/ribbon_blue.png) no-repeat top right #fff;
+}
+
+.r_colour_green
+{
+    background: url(/images/ribbons/ribbon_green.png) no-repeat top left;
+    text-shadow: -1px -1px #7aac23;
+}
+.r_colour_green .ribbon_end
+{
+    background: url(/images/ribbons/ribbon_green.png) no-repeat top right #fff;
+}

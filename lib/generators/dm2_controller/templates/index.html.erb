@@ -1,0 +1,39 @@
+<column-mc:>
+
+  <frame id="new" header="Create" close="true">
+  <%% semantic_form_for <%= model_name %>.new do |form| %>
+      <%%= form.inputs %>
+      <%%= form.buttons %>
+      <%% end %>
+  </frame>
+
+  <div id="<%= object_plural_name %>_table">
+    <frame id="filter" header="Filter" close="true">
+    <%% semantic_form_for @search, :html => {:id => "<%= object_plural_name %>_filter"} do |form| %>
+        <%% form.inputs do %>
+            <%#= form. %>
+        <%% end %>
+        <%% form.buttons do %>
+            <li class="filter"><%%= link_to_function "Clear filter", "clearForm($('#<%= object_plural_name %>_filter'));$('#<%= object_plural_name %>_filter').submit();", :class => "clear_filter" %></li>
+            <%%= form.commit_button :label => "Filter", :button_html => { :class => "filter bt_highlighted" } %>
+        <%% end %>
+    <%% end %>
+    </frame>
+
+    <ul class="actions">
+      <%%= link_to "New", new_<%= object_singular_name %>_path, :icon => "add", :frame => "new" %>
+      <%%= link_to "Filter", <%= object_plural_name %>_path, :icon => "filter", :frame => "filter" %>
+    </ul>
+
+    <h1><%= object_plural_name.capitalize %></h1>
+
+    <table class="generic" cellspacing="0" cellpadding="0">
+      <%%= table_headers <%= model_name.constantize.columns.map{|c| "order(@search, :by => \"#{c.name}\", :as => \"#{c.name.humanize}\")" unless c.name=='id'}.compact.join(",\n") %> %>
+
+      <tbody id="<%= object_plural_name %>_list">
+      <%%= render @<%= object_plural_name %> %>
+      </tbody>
+    </table>
+    <%%= will_paginate @<%= object_plural_name %> %>
+  </div>
+</column-mc:>

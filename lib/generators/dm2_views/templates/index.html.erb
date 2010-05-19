@@ -1,0 +1,22 @@
+<column-mc:>
+   <h1><%= object_plural_name.capitalize  %></h1>
+<%%= will_paginate @<%= object_plural_name %> %>
+<table class="generic" cellspacing="0" cellpadding="0">
+  <thead>
+  <tr>
+    <%= model_name.constantize.columns.map(&:name).map{|column_name| "<th>#{column_name.humanize}</th>"}.join("\n")  -%>
+    <th colspan="3">Actions</th>
+  </tr>
+  </thead>
+  <tbody id="<%= object_plural_name %>_list">
+  <%%= render @<%= object_plural_name %> %>
+  </tbody>
+</table>
+<%%= will_paginate @<%= object_plural_name %> %>
+
+<%% semantic_form_for <%= class_path.blank? ? "#{model_name}.new" : "[#{class_path.map{|a| ":#{a}"}*(', ')},  #{model_name}.new]" %> do |form| %>
+<%%= form.inputs %>
+<%%= form.buttons %>
+<%% end %>
+
+</column-mc:>

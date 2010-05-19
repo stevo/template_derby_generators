@@ -1,0 +1,84 @@
+<def tag="lbuilder_layout">
+  <div class="clc" style="clear:both;">
+    <% %w(t m b).each do |row_code| %>
+        <%= render :partial => "/layouts/row", :locals => {:row_code => row_code} %>
+    <% end %>
+  </div>
+  <div id="footer"><%= link_to "selleo.com", "http://www.selleo.com" %> - 2010 /  <%#= image_tag('/images/bg_footer_logo.png') %></div>
+</def>
+
+<def tag="frame" attrs="id,header,close">
+  <div class="frame" id="<%= id -%>">
+    <% unless header.blank? %>
+    <h1><%= header %></h1>
+    <% end %>
+    <div class="header">
+      <span class="lc"></span>
+      <span class="c"></span>
+      <span class="rc"></span>
+    </div>
+    <div class="content">
+      <div class="c">
+        <param:content/>
+        <% unless close.nil? %>        
+          <%= link_to image_tag('/images/icons/close.png'), '#', :class => 'bt_close' %>
+        <% end %>
+      </div>
+    </div>
+    <div class="footer">
+      <span class="lc"></span>
+      <span class="rc"></span>
+    </div>
+  </div>
+</def>
+
+<def tag="emboss-frame" attrs="id,close">
+  <div class="emboss_frame" id="<%= id -%>">
+    <div class="header">
+      <span class="lc"></span>
+      <span class="c"></span>
+      <span class="rc"></span>
+    </div>
+    <div class="content">
+      <div class="c">
+        <param:content/>
+        <% unless close.nil? %>
+          <%= link_to image_tag('/images/icons/close.png'), '#', :class => 'bt_close' %>
+        <% end %>
+      </div>
+    </div>
+    <div class="footer">
+      <span class="lc"></span>
+      <span class="rc"></span>
+    </div>
+  </div>
+</def>
+
+
+<def tag="trr" attrs="id,klass">
+  <tr id="<%= id %>" class="<%= cycle 'odd', 'even' %> <%= klass %>">
+    <td class="lb"></td>
+    <param:content/>
+    <td class="rb">
+      <% if params_present.include?('tools') %>
+          <div>
+            <param:tools/>
+            <span></span>
+          </div>
+      <% end %>
+    </td>
+  </tr>
+</def>
+
+<def tag="ribbon" attrs="colour">
+    <div class="ribbon r_colour_<%= colour %>">
+    <h3>
+        <param:content/>
+    </h3>
+    <div class="ribbon_end"></div>
+  </div>
+</def>
+
+<def tag="clb">
+  <div class="clb"></div>
+</def>

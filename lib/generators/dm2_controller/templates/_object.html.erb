@@ -1,0 +1,13 @@
+<trr>
+  <param:content>
+    <%- model_name.constantize.columns.map(&:name).each do |column_name| -%>
+        <%- if not column_name == "id" -%>
+        <td><%%= <%= object_singular_name %>.<%= column_name %> %></td>
+        <%- end -%>
+    <%- end -%>
+  </param:content>
+  <param:tools>
+    <%%= link_to edit_small_icon("Edit <%= object_singular_name %>"), edit_<%= namespace_prefix %><%= object_singular_name %>_path(<%= object_singular_name %>) %>
+    <%%= link_to remove_small_icon("Remove <%= object_singular_name %>"), <%= namespace_prefix %><%= object_singular_name %>_path(<%= object_singular_name %>), :method => :delete, :confirm => "Are you sure?" %>
+  </param:tools>
+</trr>

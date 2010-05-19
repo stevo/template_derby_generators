@@ -1,0 +1,17 @@
+<column-mc:>
+
+  <ul class="actions">
+    <%%= link_to_function "Save changes", "$('##{dom_id(@<%= object_singular_name %>, :edit)}').submit()", :icon => "save" %>
+    <%%= link_to "Go back to <%= object_plural_name %> listing", <%= object_plural_name %>_path, :icon => "back" %>
+  </ul>
+
+  <h1>Edit <%= object_singular_name %> - <%%= @<%= object_singular_name %> %></h1>
+
+  <frame>
+  <%% semantic_form_for @<%= object_singular_name %> do |form| %>
+      <%%= form.inputs %>
+      <%%= form.buttons %>
+  <%% end %>
+  </frame>
+
+</column-mc:>

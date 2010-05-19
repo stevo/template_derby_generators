@@ -1,0 +1,92 @@
+
+.inputs ol li input.hasDatepicker, .inputs ol li .hasDatepicker
+{
+    width: 232px;
+}
+
+
+.ui-datepicker
+{
+    font-size: 14px;
+}
+
+.ui-widget-header
+{
+    background: url("/images/frm_hm.png") repeat-x scroll left bottom #131313;
+    border: none;
+}
+
+.ui-datepicker td a, .ui-datepicker td span
+{
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.ui-datepicker td a
+{
+    color: #1da3f0 !important;
+}
+
+
+.ui-widget-content .ui-state-highlight
+{
+    border-color: #9f9f9f;
+    color: #000 !important;
+    background: #ddd;
+}
+
+
+.ui-state-active, .ui-widget-content .ui-state-active
+{
+    background: #e2f8ff;
+    border-color: #55BAF4;
+}
+
+.ui-widget-content .ui-state-hover, .ui-state-hover
+{
+    background: #ebe9e9;
+    border-color: #b8b7b7;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next
+{
+    top: 3px;
+}
+
+.ui-datepicker .ui-datepicker-prev span
+{
+    background: url(/images/calendar_moves_bt.png) no-repeat 0 0;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover span
+{
+    background: url(/images/calendar_moves_bt.png) no-repeat 0 -16px;
+}
+
+.ui-datepicker .ui-datepicker-next span
+{
+    background: url(/images/calendar_moves_bt.png) no-repeat -16px 0;
+}
+
+.ui-datepicker .ui-datepicker-next-hover span
+{
+    background: url(/images/calendar_moves_bt.png) no-repeat -16px -16px;
+}
+
+
+.ui-datepicker .ui-datepicker-prev-hover
+{
+    background: none !important;
+    border: none !important;
+    left: 2px;
+}
+
+.ui-datepicker .ui-datepicker-next-hover
+{
+    background: none !important;
+    border: none !important;
+    right: 2px;
+}
+

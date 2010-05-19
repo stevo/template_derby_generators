@@ -1,0 +1,8 @@
+<tr id="<%%= dom_id(<%= object_singular_name %>) %>">
+  <%= model_name.constantize.columns.map(&:name).map do |column_name|
+     %{<td><%= #{object_singular_name}.#{column_name}#{'.strftime("%Y.%m.%d %H:%M")' if %w(created_at updated_at).include?(column_name)} \%\></td>}
+    end.join("\n") -%>
+<td><%%= link_to "Show", <%= namespace_prefix %><%= object_singular_name %>_path(<%= object_singular_name %>) %></td>
+<td><%%= link_to "Edit", edit_<%= namespace_prefix %><%= object_singular_name %>_path(<%= object_singular_name %>) %></td>
+<td><%%= link_to "Destroy", <%= namespace_prefix %><%= object_singular_name %>_path(<%= object_singular_name %>), :method => :delete, :confirm => "Are you sure?" %></td>
+</tr>
